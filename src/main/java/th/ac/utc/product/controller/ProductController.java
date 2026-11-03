@@ -36,7 +36,7 @@ public class ProductController {
         return productService.findById(id).orElse(null);
     }
 
-        @GetMapping("/products/search")
+        @GetMapping("/products/search")//xxxxxxx
         public List<Product> search (@RequestParam String keyword) {
             return productService.findByName(keyword);
         }
